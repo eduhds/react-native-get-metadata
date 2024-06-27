@@ -17,10 +17,9 @@ const GetMetadata = NativeModules.GetMetadata
       }
     );
 
-export function multiply(a: number, b: number): Promise<number> {
-  return GetMetadata.multiply(a, b);
+interface GetMetadataInterface {
+  forKey(key: string): Promise<string>;
+  intForKey(key: string): Promise<number>;
 }
 
-export function getMetadata(key: string): Promise<string> {
-  return GetMetadata.getMetadata(key);
-}
+export default GetMetadata as GetMetadataInterface;
