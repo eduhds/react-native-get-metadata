@@ -47,6 +47,8 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
-	<false/>
+  <false/>
+  <key>example_metadata</key>
+  <string>This is an example metadata</string>
 </dict>
 </plist>

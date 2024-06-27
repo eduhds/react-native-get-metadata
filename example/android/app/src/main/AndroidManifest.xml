@@ -22,7 +22,7 @@
         </intent-filter>
       </activity>
 
-      <meta-data android:name="example_metadata" android:value="This is a example metadata" />
+      <meta-data android:name="example_metadata" android:value="This is an example metadata" />
       <meta-data android:name="example_metadata2" android:value="123" />
     </application>
 </manifest>
