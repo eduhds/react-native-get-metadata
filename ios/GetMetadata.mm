@@ -2,11 +2,11 @@
 
 @interface RCT_EXTERN_MODULE(GetMetadata, NSObject)
 
-RCT_EXTERN_METHOD(multiply:(float)a withB:(float)b
+RCT_EXTERN_METHOD(forKey:(NSString)key
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
-RCT_EXTERN_METHOD(getMetadata:(NSString)key
+RCT_EXTERN_METHOD(intForKey:(NSString)key
                  withResolver:(RCTPromiseResolveBlock)resolve
                  withRejecter:(RCTPromiseRejectBlock)reject)
 
