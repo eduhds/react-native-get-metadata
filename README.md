@@ -1,6 +1,8 @@
 # react-native-get-metadata
 
-Get metadata from Info.list (iOS) or AndroidManifest.xml (Android)
+Get metadata from Info.plist (iOS) or AndroidManifest.xml (Android)
+
+[react-native-app-metadata](https://github.com/CubeSugar/react-native-app-metadata)
 
 ## Installation
 

@@ -1,7 +1,7 @@
 {
   "name": "react-native-get-metadata",
   "version": "0.1.0",
-  "description": "Get metadata from Info.list (iOS) or AndroidManifest.xml (Android)",
+  "description": "Get metadata from Info.plist (iOS) or AndroidManifest.xml (Android)",
   "main": "lib/commonjs/index",
   "module": "lib/module/index",
   "types": "lib/typescript/src/index.d.ts",
