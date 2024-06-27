@@ -20,3 +20,7 @@ const GetMetadata = NativeModules.GetMetadata
 export function multiply(a: number, b: number): Promise<number> {
   return GetMetadata.multiply(a, b);
 }
+
+export function getMetadata(key: string): Promise<string> {
+  return GetMetadata.getMetadata(key);
+}
