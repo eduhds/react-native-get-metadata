@@ -26,7 +26,7 @@ class GetMetadataModule(reactContext: ReactApplicationContext) :
   fun forKey(key: String, promise: Promise) {
     try {
       val bundle: Bundle = getBundle()
-      val value: String? = bundle.getString(key)
+      val value: String = bundle.getString(key) ?: throw Exception("Key not found: $key")
       promise.resolve(value)
     } catch (e: Throwable) {
       promise.reject("[ERROR:GetMetadata.forKey]", e)
@@ -37,7 +37,7 @@ class GetMetadataModule(reactContext: ReactApplicationContext) :
   fun intForKey(key: String, promise: Promise) {
     try {
       val bundle: Bundle = getBundle()
-      val value: Int? = bundle.getInt(key)
+      val value: Int = bundle.getInt(key)
       promise.resolve(value)
     } catch (e: Throwable) {
       promise.reject("[ERROR:GetMetadata.intForKey]", e)
