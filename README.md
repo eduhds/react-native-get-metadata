@@ -16,8 +16,10 @@ There is a old and inactive [lib](https://github.com/CubeSugar/react-native-app-
 
 ```sh
 npm install react-native-get-metadata
-# OR
+# With yarn
 yarn add react-native-get-metadata
+
+cd ios && pod install
 ```
 
 ## Usage
